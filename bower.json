@@ -1,0 +1,23 @@
+{
+  "name": "githubapi",
+  "authors": [
+    "sadiyah <sadiyah-ali@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "skeleton": "^2.0.4",
+    "jquery": "^2.2.4",
+    "moment": "^2.13.0"
+  }
+}
