@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Github API</title>
+    <title>GitHub API</title>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/style.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <h1 class="header jumbotron">Repomania</h1>
     <div class="container">
 
-      <form id="userForm">
-        <label for="user">Github Username: </label>
-        <input id="user" name="user" type="text">
-        <button type="submit" class="btn btn-success">Submit</button>
-      </form>
+      <div class="lined">
+        <h5>Enter a user to view their repositories</h5>
+         <form id="userForm">
+          <input id="user" name="user" type="text" placeholder="GitHub Username">
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+
+      <h2>Repositories</h2>
+      <h4>User: <span id="userName"></span></h4>
+      
+        <div id="repoResults">
+        </div>
 
     </div>
   </body>
