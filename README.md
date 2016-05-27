@@ -1,23 +1,30 @@
-# View Finder
+# GitHub Repo Finder
 
-#### An online View Finder Application
-#### May 16, 2016
+#### An online app to view GitHub repositories
+#### May 27, 2016
 
 #### By Scott McIntire
 
 ## Description
 
-A user can add a view and then click it to automatically see that location in Google street view.
+A user can add a GitHub username and view repositories and their corresponding descriptions.
 
 ## Setup Instructions
 
-* Clone this repository.
-* Install Node, Bower, Gulp.
-* Run the index.html file.
+* Download a personal access token from GitHub
+* Clone this repository
+* Create a file at the top level of the project directory called '.env' and add the following to it:
+
+  exports.apiKey = "YOUR_API_KEY"
+
+* Within the directory run:
+* $ npm install
+* $ bower install
+* $ gulp 
 
 ## Technologies Used
 
-Node, Bower, Gulp, JSON, Bootstrap, CSS, JavaScript, HTML
+Node, Bower, Gulp, JSON, Bootstrap, SCSS, JavaScript, HTML, JQuery, GitHub API
 
 ## License
 
