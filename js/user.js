@@ -4,7 +4,7 @@ var apiKey = require('./../.env').apiKey;
 exports.User = function(name) {
   this.name = name;
   $.get('https://api.github.com/users/' + this.name + '?access_token=' + apiKey).then(function(response){
-
+    console.log(response);
     picture = response.avatar_url;
     followers = response.followers;
 
@@ -18,7 +18,8 @@ exports.User = function(name) {
     //show user info
     $('.userInfo').show();
     $('.repos').show();
-    $('#userName').text(this.name);
+    $('#userName').text(response.login);
+    $('#fullName').text(this.name);
     $('#userPicture').append('<img src="' + picture + '" height="100" width="100">');
     $('#followers').text(followers);
 
