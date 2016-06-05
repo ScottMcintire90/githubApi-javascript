@@ -32,4 +32,4 @@ MIT License. See LICENSE.md for details.
 
 ## Copyright
 
-Copyright (c) 2016 Scott McIntire and Justin Folkes
+Copyright (c) 2016 Scott McIntire
